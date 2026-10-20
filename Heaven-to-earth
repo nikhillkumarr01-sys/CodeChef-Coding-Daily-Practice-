@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t,i,n,v1,v2;
+	cin>>t;
+	i = 1;
+	while(i<=t){
+	    cin>>n>>v1>>v2;
+	    double t1 = (n*1.414213562373095)/v1;
+	    double t2 = (2.0*n)/v2;
+	    if(t1<t2){
+	        cout<<"Stairs\n";
+	    }
+	    else{
+	        cout<<"Elevator\n";
+	    }
+	    i++;
+	}
+	return 0;
+
+}
